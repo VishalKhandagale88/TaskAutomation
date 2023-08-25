@@ -1,10 +1,9 @@
-import java.beans.PropertyDescriptor;
 import java.io.IOException;
 
 public class TaskAutomation {
     public static void main(String[] args) {
         openChrome("https://www.youtube.com/"); // give url of website of that you want to open by this program
-        openNotion();;
+        openNotion();
     }
 
     public static void openChrome(String url){
