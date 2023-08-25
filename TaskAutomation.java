@@ -14,4 +14,10 @@ public class TaskAutomation {
             throw new RuntimeException(e);
         }
     }
+
+    // opening application
+
+    public static void openNotion(String url){
+
+    }
 }
