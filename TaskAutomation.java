@@ -1,3 +1,4 @@
+import java.beans.PropertyDescriptor;
 import java.io.IOException;
 
 public class TaskAutomation {
@@ -17,7 +18,13 @@ public class TaskAutomation {
 
     // opening application
 
-    public static void openNotion(String url){
-
+    public static void openNotion(){
+        String[] command ={"cmd","/c","start","notion://"};
+        ProcessBuilder processBuilder = new ProcessBuilder(command);
+        try {
+            processBuilder.start();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
