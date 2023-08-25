@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class TaskAutomation {
     public static void main(String[] args) {
-
+        openChrome("https://www.youtube.com/");
     }
 
     public static void openChrome(String url){
